@@ -84,7 +84,8 @@
 		token: 'b87cea6abc73f77148534e03adff4d09'
 	}
 
-	var xinzhiKey = 'SlU-qToxZJDEvoqbr'
+	var xinzhiKey = '你的心知天气key'
+	var gaodeKey = '你的高德地图key'
 	export default {
 		data() {
 			return {
@@ -230,7 +231,7 @@
 		methods: {
 			getData: async (that) => {
 				//请求定位
-				let res = await axios.get('https://restapi.amap.com/v3/ip?key=0fdba6429d9feb9b63240ac17aab5dc7')
+				let res = await axios.get('https://restapi.amap.com/v3/ip?key=' + gaodeKey)
 				const {
 					city,
 					adcode
